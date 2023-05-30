@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma dos Maiores</title>
+</head>
+<body>
+    <script>
+        var valor1 = prompt("Escreva o primeiro Valor Abaixo: ");
+        valor1 = Number(valor1); 
+
+        var valor2 = prompt("Escreva o segundo Valor Abaixo: ");     
+        valor2 = Number(valor2);
+
+        var valor3 = prompt("Escreva o terceiro Valor Abaixo: ");
+        valor3 = Number(valor3);
+
+        var menor_valor;
+        if (valor1 < valor2 && valor1 < valor3){
+            menor_valor = valor1;
+            alert("A soma dos dois números é, " + (valor2 + valor3));
+        } else if (valor2 < valor1 && valor2 < valor3){
+            menor_valor = valor2;
+            alert("A soma dos dois números é, " + (valor1 + valor3));
+        } else if (valor3 < valor1 && valor3 < valor2){
+            menor_valor = valor3;
+            alert("A soma dos dois números é, " + (valor1 + valor2));
+        }
+    </script>
+</body>
+</html>

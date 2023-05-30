@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro, último e o maior</title>
+</head>
+<body>
+    <script>
+        var valor1 = prompt ("Escreva o primeiro valor: ");
+        valor1 = Number(valor1);
+        var valor2 = prompt ("Escreva o segundo valor:");
+        valor2 = Number(valor2);
+        var valor3 = prompt ("Escreva o terceiro valor:");
+        valor3 = Number(valor3);
+        var valor4 = prompt ("Escreva o quarto valor:");
+        valor4 = Number(valor4);
+        var maior_numero;
+
+        if (valor1 > valor2 && valor1 > valor3 && valor1 > valor4){
+        maior_numero = valor1;}
+        else if (valor2 > valor1 && valor2 > valor3 && valor2 > valor4){
+            maior_numero = valor2;
+        }else if (valor3 > valor1 && valor3 > valor2 && valor3 > valor4){
+        maior_numero = valor3;}
+        else if (valor4 > valor1 && valor4 > valor2 && valor4 > valor3){
+            maior_numero = valor4;
+        }
+        alert("O resultado é : " + (valor1 + valor4 + maior_numero));
+
+
+
+    </script>
+</body>
+</html>
